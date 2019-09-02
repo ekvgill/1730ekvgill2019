@@ -56,7 +56,7 @@
             this.txtSubtotal.Name = "txtSubtotal";
             this.txtSubtotal.Size = new System.Drawing.Size(100, 20);
             this.txtSubtotal.TabIndex = 1;
-            this.txtSubtotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSubtotal.TextChanged += new System.EventHandler(this.TxtSubtotal_TextChanged);
             // 
             // lblDiscountpercent
             // 
@@ -72,10 +72,9 @@
             // 
             this.txtDiscountPercent.Location = new System.Drawing.Point(134, 63);
             this.txtDiscountPercent.Name = "txtDiscountPercent";
-            this.txtDiscountPercent.ReadOnly = true;
             this.txtDiscountPercent.Size = new System.Drawing.Size(100, 20);
             this.txtDiscountPercent.TabIndex = 3;
-            this.txtDiscountPercent.TabStop = false;
+            this.txtDiscountPercent.Text = "5";
             // 
             // lblDiscountAmount
             // 
@@ -83,7 +82,7 @@
             this.lblDiscountAmount.Location = new System.Drawing.Point(35, 94);
             this.lblDiscountAmount.Name = "lblDiscountAmount";
             this.lblDiscountAmount.Size = new System.Drawing.Size(90, 13);
-            this.lblDiscountAmount.TabIndex = 4;
+            this.lblDiscountAmount.TabIndex = 6;
             this.lblDiscountAmount.Text = "Discount amount:";
             this.lblDiscountAmount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -93,7 +92,7 @@
             this.txtDiscountamount.Name = "txtDiscountamount";
             this.txtDiscountamount.ReadOnly = true;
             this.txtDiscountamount.Size = new System.Drawing.Size(100, 20);
-            this.txtDiscountamount.TabIndex = 5;
+            this.txtDiscountamount.TabIndex = 7;
             this.txtDiscountamount.TabStop = false;
             // 
             // lblTotal
@@ -103,7 +102,7 @@
             this.lblTotal.Location = new System.Drawing.Point(35, 120);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(34, 13);
-            this.lblTotal.TabIndex = 6;
+            this.lblTotal.TabIndex = 8;
             this.lblTotal.Text = "Total:";
             // 
             // txtTotal
@@ -112,7 +111,7 @@
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(100, 20);
-            this.txtTotal.TabIndex = 7;
+            this.txtTotal.TabIndex = 9;
             this.txtTotal.TabStop = false;
             this.txtTotal.TextChanged += new System.EventHandler(this.TextBox4_TextChanged);
             // 
@@ -121,7 +120,7 @@
             this.btnCalculate.Location = new System.Drawing.Point(62, 153);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
-            this.btnCalculate.TabIndex = 2;
+            this.btnCalculate.TabIndex = 4;
             this.btnCalculate.Text = "&Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
@@ -131,7 +130,7 @@
             this.btnExit.Location = new System.Drawing.Point(159, 153);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 3;
+            this.btnExit.TabIndex = 5;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
@@ -141,7 +140,7 @@
             this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(287, 228);
+            this.ClientSize = new System.Drawing.Size(309, 262);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtTotal);
