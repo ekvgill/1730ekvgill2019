@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ekvgill1730ex1b", "ekvgill1730ex1b\ekvgill1730ex1b.csproj", "{F0377254-4B4B-463C-8E12-6085AE9A49F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ekvgill1c1", "ekvgill1c1\ekvgill1c1.csproj", "{383C18D8-EC5A-4003-9293-C123A8B01278}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F0377254-4B4B-463C-8E12-6085AE9A49F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0377254-4B4B-463C-8E12-6085AE9A49F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0377254-4B4B-463C-8E12-6085AE9A49F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{383C18D8-EC5A-4003-9293-C123A8B01278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383C18D8-EC5A-4003-9293-C123A8B01278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383C18D8-EC5A-4003-9293-C123A8B01278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383C18D8-EC5A-4003-9293-C123A8B01278}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
