@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ekvgill1d1", "ekvgill1d1\ek
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ekvgill1e1", "ekvgill1e1\ekvgill1e1.csproj", "{BE9989CF-8F64-4F86-9A5B-CD332C4ADD04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ekvgill1f1", "ekvgill1f1\ekvgill1f1.csproj", "{AEA1F365-7743-4F85-A53B-0EA1292326EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BE9989CF-8F64-4F86-9A5B-CD332C4ADD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE9989CF-8F64-4F86-9A5B-CD332C4ADD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE9989CF-8F64-4F86-9A5B-CD332C4ADD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA1F365-7743-4F85-A53B-0EA1292326EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA1F365-7743-4F85-A53B-0EA1292326EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA1F365-7743-4F85-A53B-0EA1292326EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA1F365-7743-4F85-A53B-0EA1292326EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
