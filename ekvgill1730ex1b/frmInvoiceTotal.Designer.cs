@@ -74,7 +74,6 @@
             this.txtDiscountPercent.Name = "txtDiscountPercent";
             this.txtDiscountPercent.Size = new System.Drawing.Size(100, 20);
             this.txtDiscountPercent.TabIndex = 3;
-            this.txtDiscountPercent.Text = "5";
             // 
             // lblDiscountAmount
             // 
