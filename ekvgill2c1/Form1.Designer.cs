@@ -76,6 +76,11 @@
             this.label11 = new System.Windows.Forms.Label();
             this.setMinButton = new System.Windows.Forms.Button();
             this.setMaxButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
+            this.subtractButton = new System.Windows.Forms.Button();
+            this.multiplyButton = new System.Windows.Forms.Button();
+            this.divideButton = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // input1TextBox
@@ -86,6 +91,7 @@
             this.input1TextBox.TabIndex = 0;
             this.input1TextBox.Text = "0";
             this.input1TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.input1TextBox.TextChanged += new System.EventHandler(this.Input1TextBox_TextChanged);
             // 
             // input2TextBox
             // 
@@ -95,6 +101,7 @@
             this.input2TextBox.TabIndex = 1;
             this.input2TextBox.Text = "0";
             this.input2TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.input2TextBox.TextChanged += new System.EventHandler(this.input2TextBox_TextChanged);
             // 
             // byte1TextBox
             // 
@@ -578,11 +585,69 @@
             this.setMaxButton.UseVisualStyleBackColor = true;
             this.setMaxButton.Click += new System.EventHandler(this.SetMaxButton_Click);
             // 
+            // addButton
+            // 
+            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.Location = new System.Drawing.Point(520, 52);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(31, 25);
+            this.addButton.TabIndex = 48;
+            this.addButton.Text = "+";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.AddButton_Click);
+            // 
+            // subtractButton
+            // 
+            this.subtractButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subtractButton.Location = new System.Drawing.Point(557, 52);
+            this.subtractButton.Name = "subtractButton";
+            this.subtractButton.Size = new System.Drawing.Size(31, 25);
+            this.subtractButton.TabIndex = 49;
+            this.subtractButton.Text = "-";
+            this.subtractButton.UseVisualStyleBackColor = true;
+            this.subtractButton.Click += new System.EventHandler(this.SubtractButton_Click);
+            // 
+            // multiplyButton
+            // 
+            this.multiplyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multiplyButton.Location = new System.Drawing.Point(594, 52);
+            this.multiplyButton.Name = "multiplyButton";
+            this.multiplyButton.Size = new System.Drawing.Size(31, 25);
+            this.multiplyButton.TabIndex = 50;
+            this.multiplyButton.Text = "*";
+            this.multiplyButton.UseVisualStyleBackColor = true;
+            this.multiplyButton.Click += new System.EventHandler(this.MultiplyButton_Click);
+            // 
+            // divideButton
+            // 
+            this.divideButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.divideButton.Location = new System.Drawing.Point(631, 52);
+            this.divideButton.Name = "divideButton";
+            this.divideButton.Size = new System.Drawing.Size(31, 25);
+            this.divideButton.TabIndex = 51;
+            this.divideButton.Text = "/";
+            this.divideButton.UseVisualStyleBackColor = true;
+            this.divideButton.Click += new System.EventHandler(this.DivideButton_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(572, 28);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(37, 13);
+            this.label12.TabIndex = 52;
+            this.label12.Text = "Result";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.divideButton);
+            this.Controls.Add(this.multiplyButton);
+            this.Controls.Add(this.subtractButton);
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.setMaxButton);
             this.Controls.Add(this.setMinButton);
             this.Controls.Add(this.label11);
@@ -688,6 +753,11 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button setMinButton;
         private System.Windows.Forms.Button setMaxButton;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Button subtractButton;
+        private System.Windows.Forms.Button multiplyButton;
+        private System.Windows.Forms.Button divideButton;
+        private System.Windows.Forms.Label label12;
     }
 }
 
